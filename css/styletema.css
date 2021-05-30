@@ -1,0 +1,33 @@
+#uyari {
+    display: none;
+    margin: auto;
+    border: 5px solid black;
+    border-radius: 15px;
+    width: 200px;
+    height: 250px;
+    background-color: gray;
+}
+.hide{
+    visibility: hidden;
+}
+    
+
+.timewarning,
+.timewrite,
+.pointGame  {
+    text-align: center;
+    color:white;
+    font-size: larger;
+
+}
+
+.button {
+    left: 25px;
+    position: relative;
+    font-size: large;
+    border: solid 5px black;
+    border-radius: 10px;
+    
+
+}
+

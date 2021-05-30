@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Orta Seviye</title>
+   <link rel="stylesheet" href="css/style.prefix.css">
+    <link rel="stylesheet" href="css/styletema.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <style>
+        body {
+    margin: 20px 0;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/001/269/787/large_2x/popcorn-bucket-on-yellow-background-free-photo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+}  
+    </style>
+</head>
+
+<body>
+      <!-- başlangıç degeri visibilty none -->
+    <div id="uyari">
+        <p class="timewarning" id="timewarning">Süre Doldu!</p><br>
+        <p class="timewrite" id="timewrite">Zaman 03:00</p><br> <input class="button" type="button" value="Yeniden Başlat" onclick="restartGame()"></input>
+    </div>
+    
+    <button class="homebtn" onclick="window.location.href='index.html'">Anasayfa</button>
+
+    
+      <!-- başlangıç degeri visibilty none -->
+      <div class="StateBar" id="statebar">
+        <span id="spanPoint">00 </span><span id="timer"></span>
+    <input id="soundbtn" type="button" value="Ses Kapa/Aç" onclick="soundSetting()">
+    </div>
+
+    <div id="game"></div>
+    
+    <audio src="sounds/incorrect.mp3" id="sound1"></audio>
+    <audio src="sounds/othergame.mp3" id="sound2"></audio>
+    <audio src="sounds/timeout.mp3" id="sound3"></audio>
+    <audio src="sounds/wingame.mp3" id="sound4"></audio>
+
+ 
+    <script src="js/script.intermediate.js"></script>
+
+</body>
+
+</html>
